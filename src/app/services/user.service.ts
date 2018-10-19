@@ -3,7 +3,7 @@ import { User } from '../models/Users';
 import { Observable, of } from 'rxjs';
 
 @Injectable()
-export class DataService {
+export class UserServce {
   users: User[];
   data: Observable<any>;
 
