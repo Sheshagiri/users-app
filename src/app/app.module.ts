@@ -8,13 +8,15 @@ import { PostsComponent } from './comoonents/posts/posts.component';
 import { PostService } from './services/post.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PostFormComponent } from './comoonents/post-form/post-form.component';
+import { NavbarComponent } from './comoonents/navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     PostsComponent,
-    PostFormComponent
+    PostFormComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
