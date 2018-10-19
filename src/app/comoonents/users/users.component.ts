@@ -16,12 +16,6 @@ export class UsersComponent implements OnInit {
   user: User = {
     firstName: '',
     lastName: '',
-    /* address: {
-      street: '',
-      city: '',
-      state: '',
-    },
-    age: null */
     email: ''
   }
   constructor() { }
@@ -31,12 +25,6 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'Paul',
         lastName: 'Doe',
-        /* age: 30,
-        address: {
-          street: '5th Cross',
-          city: 'Las Vegas',
-          state: 'NV'
-        }, */
         isActive: true,
         registered: new Date('11/11/2018 08:08:09'),
         hide: true,
@@ -45,43 +33,18 @@ export class UsersComponent implements OnInit {
       {
         firstName: 'Tom',
         lastName: 'Marsh',
-        /* age: 30,
-        address: {
-          street: 'Queen\'s st',
-          city: 'San Jose',
-          state: 'CA'
-        }, */
         hide: true,
         email:'tom@tom.com',
         registered: '01/04/2011 01:05:06'
       }, {
         firstName: 'Pete',
         lastName: 'William',
-        /* age: 30,
-        address: {
-          street: '20 east central st',
-          city: 'Seatle',
-          state: 'WA'
-        }, */
         hide: true,
         isActive: true,
         email:'pete@william.com',
         registered: '01/04/2015 01:05:06'
       },
     ];
-    /* this.addUser({
-      firstName: 'Sam',
-      lastName:'Middle',
-      age: 42,
-      address: {
-        street: '1st main',
-        city: 'New England',
-        state: 'CN'
-      },
-      registered: new Date('10/10/2013 09:01:05'),
-      isActive: true,
-      hide: true
-    }); */
   }
   addUser() {
     this.user.isActive = true;
@@ -90,12 +53,6 @@ export class UsersComponent implements OnInit {
     this.user = {
       firstName: '',
       lastName: '',
-      /* address: {
-        street: '',
-        city: '',
-        state: '',
-      },
-      age: null, */
       email: ''
     }
   }
@@ -122,6 +79,5 @@ export class UsersComponent implements OnInit {
 
       this.form.reset();
     }
-    //e.preventDefault();
   }
 }
