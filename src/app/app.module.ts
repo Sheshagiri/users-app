@@ -9,6 +9,8 @@ import { PostService } from './services/post.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PostFormComponent } from './comoonents/post-form/post-form.component';
 import { NavbarComponent } from './comoonents/navbar/navbar.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './comoonents/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { NavbarComponent } from './comoonents/navbar/navbar.component';
     UsersComponent,
     PostsComponent,
     PostFormComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [UserServce, PostService],
   bootstrap: [AppComponent]
